@@ -13,25 +13,41 @@
     grid-template-columns: 50px 1fr;
 }
 .channel-picture{
-    width: 40px;
+    width: 36px;
 }
 .profile-picture{
     width: 100%;
     border-radius: 50%;
 }
-.video-info{
-    margin-left: 2px;
-}
 .video-title{
     margin-bottom: 10px;
     font-weight: 500;
+    font-family: Roboto,Arial;
+    font-size: 14px;
 }
 .video-description{
     margin-bottom: 4px;
     font-size: 12px;
-    color: gray;
+    color: #606060;
 }
 .video-stats{
     font-size: 12px;
-    color: gray;
+    color: #606060;
+}
+
+.video-preview{
+    position: relative;
+}
+
+.video-time{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 3px;
+    color: white;
+    bottom: 20px;
+    right: 5px;
 }

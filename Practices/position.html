@@ -8,7 +8,7 @@
 <body style="
     height: 3000px;
     padding-top: 60px;
-    padding-left: 60px;
+    padding-left: 90px;
     ">
     <div style="
         background-color: black;
@@ -22,21 +22,29 @@
         header
     </div>
     <div style="
-            background-color: green;
+        background-color: green;
+        color: white;
+        position: fixed;
+        top: 50px;
+        left: 0px;
+        height: 500px;
+        width: 70px;
+        ">
+        sidebar
+        <div style="
+            background-color: red;
             color: white;
-            position: fixed;
-            top: 50px;
-            left: 0px;
-            height: 500px;
-            width: 50px;
+            position: absolute;
+            top: 0px;
+            right: 5px;
             ">
-            header
+            X
+        </div>
     </div>
     <div style="
         background-color: lightblue;
         height: 200px;
         width: 200px;
-        position: static;
         ">
         div 1
     </div>
@@ -44,8 +52,27 @@
         background-color: lightpink;
         height: 200px;
         width: 200px;
+        position: relative;
         ">
         div 2
+        <div style="
+            background-color: red;
+            color: white;
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            ">
+            absolute
+        </div>
+    </div>
+    <div style="
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        ">
+        absolute
     </div>
 </body>
 </html>

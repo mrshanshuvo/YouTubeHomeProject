@@ -5,6 +5,7 @@
     justify-content: space-between;
 
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -56,6 +57,7 @@
 }
 
 .search-button{
+    position: relative;
     height: 39px;
     width: 66px;
     background-color: #f7f7f7;
@@ -68,6 +70,26 @@
 .search-icon{
     height: 25px;
     margin-top: 4px;
+}
+
+.search-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: Roboto,Arial;
+    border-radius: 2px;
+    font-size: 12px;
+    color: white;
+    opacity: 0;
+    bottom: -28px;
+    pointer-events: none;
+}
+
+.search-button:hover .tooltip{
+    opacity: 1;
 }
 
 .voice-search-button{
@@ -103,9 +125,28 @@
     cursor: pointer;
 }
 
+.notification-icon-container{
+    position: relative;
+}
+
 .notifications-icon{
     height: 24px;
     cursor: pointer;
+}
+
+.notifications-count{
+    position: absolute;
+    background-color: rgb(194, 0, 0);
+    color: white;
+    top: -1px;
+    right: -4px;
+    font-family: Roboto,Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 1.5px;
+    border-radius: 50%;
 }
 
 .current-user-picture{
