@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/CSS/sidebar.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="left-section">
             <img class="hamburger-menu" src="/Icons/hamburger-menu.svg" alt="">
             <img class="youtube-logo" src="/Icons/youtube-logo.svg" alt="">
@@ -26,21 +26,31 @@
             </button>
             <button class="voice-search-button">
                 <img class="voice-search-icon" src="/Icons/voice-search-icon.svg" alt="">
+                <div class="tooltip">
+                    Search with your voice
+                </div>
             </button>
         </div>
         <div class="right-section">
-            <img src="/Icons/upload.svg" alt="" class="upload-icon">
-            <img src="/Icons/youtube-apps.svg" alt="" class="youtube-apps-icon">
+            <div class="upload-icon-container">
+                <img src="/Icons/upload.svg" alt="" class="upload-icon">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="youtube-apps-container">
+                <img src="/Icons/youtube-apps.svg" alt="" class="youtube-apps-icon">
+                <div class="tooltip">YouTube Apps</div>
+            </div>
             <div class="notification-icon-container">
                 <img src="/Icons/notifications.svg" alt="" class="notifications-icon">
                 <div class="notifications-count">
                     3
                 </div>
+                <div class="tooltip">Notifications</div>
             </div>
             <img src="/ChannelPictures/my-channel.png" alt="" class="current-user-picture">
         </div>
-    </div>
-    <div class="sidebar">
+    </header>
+    <nav class="sidebar">
         <div class="sidebar-link">
             <img src="/Icons/home.svg" alt="">
             <div>Home</div>
@@ -65,9 +75,9 @@
             <img src="/Icons/library.svg" alt="">
             <div>Library</div>
         </div>
-    </div>
-    <div class="video-grid">
-        <div>
+    </nav>
+    <main class="video-grid">
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-1.webp">
                 <div class="video-time">
@@ -84,8 +94,9 @@
                     <p class="video-stats">3.4M views &#183; 6 months ago</p>
                 </div>
             </div>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-2.webp">
                 <div class="video-time">
@@ -102,9 +113,9 @@
                     <p class="video-stats">19M views &#183; 4 years ago</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-3.webp">
                 <div class="video-time">
@@ -121,8 +132,9 @@
                     <p class="video-stats">12M views &#183; 1 year ago</p>
                 </div>
             </div>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-4.webp">
                 <div class="video-time">
@@ -139,9 +151,9 @@
                     <p class="video-stats">18M views &#183; 4 months ago</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-5.webp">
                 <div class="video-time">
@@ -158,8 +170,9 @@
                     <p class="video-stats">519K views &#183; 5 years ago</p>
                 </div>
             </div>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-6.webp">
                 <div class="video-time">
@@ -176,8 +189,9 @@
                     <p class="video-stats">141M views &#183; 1 year ago</p>
                 </div>
             </div>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-7.webp">
                 <div class="video-time">
@@ -194,8 +208,9 @@
                     <p class="video-stats">6.6M views · 1 year ago</p>
                 </div>
             </div>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-8.webp">
                 <div class="video-time">
@@ -213,8 +228,9 @@
                     <p class="video-stats">3.7M views · 10 months ago</p>
                 </div>
             </div>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-9.webp">
                 <div class="video-time">
@@ -232,8 +248,9 @@
                     <p class="video-stats">20M views · 3 year ago</p>
                 </div>
             </div>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-10.webp">
                 <div class="video-time">
@@ -251,8 +268,9 @@
                     <p class="video-stats">14M views · 1 year ago</p>
                 </div>
             </div>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-11.webp">
                 <div class="video-time">
@@ -269,8 +287,9 @@
                     <p class="video-stats">3M views &#183; 1 year ago</p>
                 </div>
             </div>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <div class="video-preview">
                 <img class="thumbnail" src="/Thumbnails/thumbnail-12.webp">
                 <div class="video-time">
@@ -288,7 +307,7 @@
                     <p class="video-stats">12M views &#183; 5 years ago</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
