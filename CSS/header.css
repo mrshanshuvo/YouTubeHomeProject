@@ -17,22 +17,29 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 24px;
+    justify-content: center;
+}
+
+.hamburger-icon-container{
+    height: 25px;
+    padding: 6px;
+    border-radius: 50%;
 }
 
 .hamburger-menu{
     height: 25px;
-    margin-left: 24px;
-    margin-right: 24px;
     cursor: pointer;
 }
 
-.hamburger-menu:hover{
+.hamburger-icon-container:hover{
     background-color: rgb(232, 232, 232);
 }
 
 .youtube-logo{
     height: 20px;
     cursor: pointer;
+    margin-left: 24px;
 }
 
 .middle-section{
@@ -52,6 +59,8 @@
     font-size: 16px;
     border: 1px solid rgb(214, 214, 214);
     border-radius: 2px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
     box-shadow: inset 1px 1px 2px rgba(0,0,0, 0.08);
 }
 
@@ -68,6 +77,8 @@
     margin-left: -1px;
     margin-right: 10px;
     cursor: pointer;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .search-icon{
@@ -146,6 +157,19 @@
     cursor: pointer;
 }
 
+.upload-icon-container,
+.youtube-apps-container,
+.notification-icon-container{
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.upload-icon-container:hover,
+.youtube-apps-container:hover,
+.notification-icon-container:hover{
+    background-color: rgb(232, 232, 232);
+}
+
 .youtube-apps-icon{
     height: 24px;
     cursor: pointer;
@@ -164,8 +188,8 @@
     position: absolute;
     background-color: rgb(194, 0, 0);
     color: white;
-    top: -1px;
-    right: -4px;
+    top: 1px;
+    right: 1px;
     font-size: 11px;
     padding-left: 5px;
     padding-right: 5px;
